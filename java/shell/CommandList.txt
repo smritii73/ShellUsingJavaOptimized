@@ -1,0 +1,113 @@
+===============================
+BUILD & RUN (Always do these first)
+===============================
+
+# Compile all Java files into /bin
+javac -d bin (Get-ChildItem -Recurse -Filter *.java).FullName
+
+# Run the custom shell
+java -cp bin shell.Main
+
+
+===============================
+WINDOWS FILE & DIRECTORY COMMANDS
+===============================
+
+dir
+dir /w
+dir /s
+dir /b
+tree
+tree /f
+
+mkdir folder
+
+cd
+cd folder
+cd ..
+cd \
+
+
+===============================
+FILE CREATION / EDITING
+===============================
+
+notepad
+notepad file.txt
+
+cmd /c "echo text > file.txt"
+cmd /c "echo more text >> file.txt"
+
+
+===============================
+SYSTEM INFORMATION
+===============================
+
+whoami
+hostname
+systeminfo
+
+===============================
+NETWORK COMMANDS
+===============================
+
+ipconfig
+ipconfig /all
+ping google.com
+tracert google.com
+netstat
+netstat -ano
+arp -a
+nslookup google.com
+
+===============================
+SYSTEM TOOLS / APPS
+===============================
+
+notepad
+calc
+explorer .
+explorer C:\
+control
+taskmgr
+cmd
+powershell
+
+===============================
+DEVELOPER & UTILITY COMMANDS
+===============================
+
+java -version
+javac -version
+python --version
+git --version
+node --version
+npm --version
+pip --version
+
+===============================
+SHELL TESTING & DEBUGGING
+===============================
+
+echo text
+
+start notepad
+start calc
+
+timeout 5
+pause
+
+===============================
+CUSTOM SHELL-SPECIFIC COMMANDS
+===============================
+
+echo
+type
+pwd
+cd
+cat
+history
+history N
+history -a filename
+history -w filename
+history -r filename
